@@ -24,6 +24,9 @@ def fetch_commits(repo_owner, repo_name, per_page=50):
 
 
 if __name__ == "__main__":
-    repo_owner = "microsoft"
-    repo_name = "playwright"
-    fetch_commits(repo_owner, repo_name)  
+    # repo_owner = "microsoft"
+    # repo_name = "playwright"
+
+    repo_owner = "cypress-io"
+    repo_name = "cypress"
+    fetch_commits(repo_owner, repo_name)

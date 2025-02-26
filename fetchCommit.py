@@ -2,9 +2,9 @@ import requests
 # http request korar jonno
 
 
-def fetch_commits(repo_owner, repo_name, per_page=50):
+def fetch_commits(repo_owner, repo_name, per_page=20):
     """
-    Parameters:
+    Parameters er details:
         repo_owner (str): The owner of the repository.
         repo_name (str): The name of the repository.
         per_page (int): Number of commits to fetch (default is 10).
@@ -27,6 +27,8 @@ if __name__ == "__main__":
     # repo_owner = "microsoft"
     # repo_name = "playwright"
 
-    repo_owner = "cypress-io"
-    repo_name = "cypress"
+    # repo_owner = "cypress-io"
+    # repo_name = "cypress"
+    repo_owner = "facebook"
+    repo_name = "jest"
     fetch_commits(repo_owner, repo_name)
